@@ -1,15 +1,28 @@
+.body{
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 .wrap{
   max-width: 1440px;
   margin: 0 auto;
 }
 .h1{
-font-size: calc(48px * 0.8);
+font-size: calc(70px * 0.8);
 }
 .h2{
-font-size: calc(40px * 0.8);
+font-size: calc(50px * 0.8);
+font-weight: 800;
+letter-spacing: 1px;
+color: #385455;
+font-family: "Danfo", serif;
+margin-top: 100px;
 }
 .h3{
 font-size: calc(36px * 0.8);
+font-weight: 800;
+color: #444;
 }
 .h4{
 font-size: calc(32px * 0.8);
@@ -78,7 +91,55 @@ font-size: 11px
 .grid{
   display: grid;
 }
-
+/* 보더스타일 */
+.borderT{
+  border-top: 5px solid #385455;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+/* 정렬 */
+.center{ 
+  width:fit-content; 
+  margin:0 auto;
+/*  블럭태그 중앙정렬  */
+}
+/* 버튼스타일 */
+.b-small{
+  width: fit-content;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+.b-medium{
+  width: fit-content;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+.b-big{
+  width: fit-content;
+  padding: 15px;
+  font-size: 16px;
+  text-align: center;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.blue{
+  background-color: #2868b0;
+}
+.rounded{
+  border-radius: 7px;
+ }
+.border1{
+  color: #222 !important;;
+  border: 1px solid #333;
+}
 
 
 
