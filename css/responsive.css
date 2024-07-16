@@ -1,0 +1,226 @@
+@media screen and (max-width:768px){
+  
+/*  body  */
+  .body{
+    overflow: hidden;
+    height: 50%;
+  }
+/*  header  */
+  header div.wrap nav h1 a::before{
+    display: none;
+  }
+  
+  header div.wrap nav h1 a{
+    width: 140px;
+  }
+    header div.wrap nav button.ham{
+    display: initial;
+  }
+
+  /* 타이틀   */
+  div#title{
+    height: 50%;
+  }
+  div#title div.wrap{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  div#title div.wrap h2{
+    
+  gap: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  }
+  header div.wrap nav ul.gnb{
+    display: none;
+  }
+  header div.wrap nav ul.enb{
+    display: none;
+  }
+  div#title div.wrap p.h4 a {
+    transform:scale(0.5) translateX(-200%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div#title div.wrap h2{
+    gap:40px 0px;
+    margin: 0;
+  }
+
+/*  어바웃미  */
+  #aboutme{
+   max-height: 900px;
+  }
+  #aboutme div.wrap{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+  }
+  #aboutme div.wrap h2{
+  
+  }
+  #aboutme div.wrap ul.intro li:nth-child(1) p{
+    font-size: calc(19px*0.8);
+  }
+  #aboutme div.wrap ul.intro li h3{
+    font-size: calc(15px*0.8);
+  }
+  #aboutme div.wrap ul.intro li p{
+    font-size: calc(13px*0.7);
+  }
+/*  스킬  */
+  #skill div.wrap ul.list{
+  gap: 0;
+  display: initial;
+  }
+  #skill div.wrap ul.list > li:nth-child(1){
+  }
+  
+  #skill div.wrap ul.list > li h3{
+   margin: 40px auto;
+  }
+  #skill div.wrap ul.list > li:nth-child(1) ul.sub{
+  flex-wrap: wrap;
+  }
+  #skill div.wrap ul.list > li:nth-child(1) ul.sub li strong::after{
+    width: 30px;
+    height: 30px;
+  }
+  #skill div.wrap ul.list > li:nth-child(n+2):nth-child(-n+5) h3{
+    font-size: calc(18px*0.7);
+  }
+  #skill div.wrap ul.list > li:nth-child(2) ul.sub{
+    margin-top: 30px;
+  }
+  #skill div.wrap ul.list > li:nth-child(2) ul.sub li strong::after{
+    width: 30px;
+    height: 30px;
+  }
+  #skill div.wrap ul.list > li:nth-child(3){
+    grid-template-columns: 60px 1fr;
+    
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  #skill div.wrap ul.list > li:nth-child(3) ul.sub{
+    /*! flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+  }
+  #skill div.wrap ul.list > li:nth-child(3) ul.sub li strong::after{
+     width: 30px;
+    height: 30px;
+  }
+    
+  .wrap{
+   padding: 0 20px;
+  }
+  .h1{
+    font-size: calc(48px * 0.6);
+  }
+  div#title div.wrap p{
+    font-size: 27px;
+  }
+
+div#title div.wrap h2 p.h1:nth-child(1){
+  
+  grid-column: 1 / span 2;
+}
+div#title div.wrap h2 p.h1:nth-child(2){
+  
+}
+div#title div.wrap h2 p.h1:nth-child(3){
+  
+}
+#skill div.wrap ul.list > li:nth-child(4){
+ flex-direction: column;   
+  }
+#skill div.wrap ul.list > li:nth-child(4) ul.sub li i::before,#skill div.wrap ul.list > li:nth-child(5) ul.sub li i::before{
+  width: 30px;
+  height: 30px;
+    
+  }
+  #skill div.wrap ul.list > li:nth-child(4) h3{
+    width: 100%;
+    margin: 30px auto;
+    display: inherit;
+  }
+  #skill div.wrap ul.list > li:nth-child(4) ul.sub li{
+    width: 100%;
+  }
+  #skill div.wrap ul.list > li:nth-child(5){
+    flex-direction: column;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+  }
+  #skill div.wrap ul.list > li:nth-child(5) h3{
+    
+  margin: 0 auto;
+  }
+#skill div.wrap ul.list > li:nth-child(5) ul.sub li{
+  }
+#skill div.wrap ul.list > li:nth-child(5) ul.sub{
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: scale(0.9);
+  }
+#skill div.wrap ul.list>li ul.sub li strong{
+  font-size: calc(15px*0.7);
+  }
+/*  포트폴리오  */
+  #portfolio div.wrap{
+    padding: 0 20px;
+  }
+  #portfolio div.wrap h2{
+    margin: 20px auto
+  }
+  #portfolio div.wrap p{
+    font-size: calc(15px*0.8);
+    margin-bottom: 0;
+  }
+  #portfolio div.wrap ul.list div.slick-track li div{
+    transform: scale(0.5);
+  }
+  #portfolio div.wrap ul.list li figure img{
+    justify-items: center;
+  }
+  #portfolio div.wrap ul.list div.slick-track li{
+    justify-content: center;
+    align-items: flex-start;
+  }
+ 
+  section#process div.wrap{
+    display: initial;
+  }
+  section#process div.wrap h2{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+   section#process div.wrap p{
+   font-size: 10px; 
+  }
+  section#process div.wrap h3{
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+  section#process div.wrap a {
+    bottom: -80px;
+    width: 100px;
+    background-color: #ccc;
+    left: 20px;
+    font-size: calc(13px*0.7)
+  }
+  div.wrap figure img{
+    display: none;
+  }
+
+}
