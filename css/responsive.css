@@ -219,8 +219,64 @@ div#title div.wrap h2 p.h1:nth-child(3){
     left: 20px;
     font-size: calc(13px*0.7)
   }
+  #contact h2{
+    position: initial;
+    transform: translate(0,0);
+  }
+  #contact div.wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  #contact div.wrap > p:nth-of-type(1){
+    
+  font-size: 12px;
+  margin: 0 auto;
+  }
+  #contact ul.list{
+    margin: 0 auto;
+    font-size: calc(15px*0.9);
+  }
+  #contact a.qna{
+   margin: 0 auto;
+  }
+  #contact ul.sns{
+    justify-content: center;
+  }
+  #contact .sourcesite{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  #contact ul.src li{
+    height: 100px;
+  }
+  #contact ul.src li a{
+    font-size: 10px;
+  }
+  #contact ul.src li a::before{
+    margin-left: 0;
+  }
+  #contact .sourcesite p{
+    margin-bottom: 20px;
+  }
+/*  footer  */
+  
+  footer div.wrap h1 a{
+    font-size: 13px;
+  }
+  footer div.wrap address{
+    display: none;
+  }
+  footer div.wrap ul.fnb li a{
+    font-size: calc(12px*0.8);
+    white-space: nowrap;
+  
+  }
+  footer div.wrap p{
+    font-size: 10px;
+  }
   div.wrap figure img{
     display: none;
   }
-
 }
