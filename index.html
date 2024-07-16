@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
+<!-- * 2024.06.27
+    * 최용근 개인 포트폴리오
+    * 
+  -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +20,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Danfo&family=Dongle&family=Gasoek+One&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Danfo&family=Dongle&family=Gasoek+One&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/jquery-3.7.1.js"></script>
+   
+    <!-- 슬릭 -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script>
+    $(document).ready(function(){
+        $('.pfAni').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true,
+            infinite: true,
+            speed: 1500,
+            cssEase: 'ease-in',
+            arrows: true,
+            fade: false,
+            responsive: [
+                    {
+                    breakpoint: 1021,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                    },
+                    {
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows:true
+                    }
+                    }
+                ]
+        });
+    });
+</script>
 </head>
 <body>
     <!-- 상단영역 -->
@@ -54,7 +99,7 @@
         <div class="wrap paddingT50 paddingB50 grid">
             <h2 class="h2 borderT">About Me</h2>
             <figure>
-                <img src="img/T5ZhZaH8R0WFxrrUWxuABw.webp" alt="이선정면사진">
+                <img src="img/T5ZhZaH8R0WFxrrUWxuABw.webp" alt="최용근정면사진">
                 <figcaption>최 용근</figcaption>
             </figure>
             <ul class="intro">
@@ -159,8 +204,8 @@
         <p>"아래 작품들은 제가 학원에서 수료하는 동안 진행한 다양한 웹디자인 및 웹퍼블리싱 프로젝트들입니다. <span class="block"></span>
             각 프로젝트는 최신 기술과 디자인 트렌드를 반영하여 제작되었으며, 실무에서의 적용 가능성을 염두에 두고 개발되었습니다."
         </p>
-        <ul class="list flex">
-            <li class="">
+        <ul class="list pfAni">
+            <li class="pfAni1">
                 <div>
                     <h3 class="h3">공제회홈페이지</h3>
                     <figure>
@@ -186,7 +231,85 @@
                     </ul>
                 </div>
             </li>
-            <li class="">
+            <li class="pfAni2">
+                <div>
+                    <h3 class="h3">프로젝트 2 Portfolio Website</h3>
+                    <figure>
+                        <img src="img/pf2.png" alt="공제회홈페이지">
+                        <figcaption>작업내용보기</figcaption>
+                    </figure>
+                    <ul class="sub">
+                        <li><strong class="bold">개요</strong>개인 포트폴리오 사이트 디자인 및 퍼블리싱</li>
+                        <li><strong class="bold">역할</strong>전체 디자인 및 프론트엔드 퍼블리싱</li>
+                        <li><strong class="bold">사용한 기술</strong>HTML5, CSS3, JavaScript, React</li>
+                        <li class="work">
+                            <strong class="bold">작업 과정</strong>
+                            <ul>
+                                <li>컨셉 설정 및 아이디어 스케치</li>
+                                <li>와이어프레임 및 프로토타입 제작</li>
+                                <li>React를 사용한 컴포넌트 기반 개발</li>
+                                <li>CSS3로 스타일링 및 애니메이션 추가</li>
+                                <li>반응형 디자인 적용</li>
+                            </ul>
+                        </li>
+                        <li><strong class="bold">기여도</strong>100% (단독 프로젝트)</li>
+                        <li class="flex"><a href="#" class="block b-medium rounded border1">깃허브 소스보기</a><a href="portfolio_live_link" class="block  b-medium blue rounded">작품보기</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="pfAni3">
+                <div>
+                    <h3 class="h3">프로젝트 3 Blog Platform</h3>
+                    <figure>
+                        <img src="img/pf1.png" alt="공제회홈페이지">
+                        <figcaption>작업내용보기</figcaption>
+                    </figure>
+                    <ul class="sub">
+                        <li><strong class="bold">개요</strong>블로그 플랫폼 디자인 및 퍼블리싱</li>
+                        <li><strong class="bold">역할</strong>전체 디자인 및 프론트엔드 퍼블리싱</li>
+                        <li><strong class="bold">사용한 기술</strong>HTML5, CSS3, JavaScript, Vue.js</li>
+                        <li class="work">
+                            <strong class="bold">작업 과정</strong>
+                            <ul>
+                                <li>사용자 요구 분석 및 기능 정의</li>
+                                <li>와이어프레임 및 초기 디자인 시안 제작</li>
+                                <li>Vue.js를 사용한 컴포넌트 기반 개발</li>
+                                <li>CSS3로 스타일링 및 레이아웃 구성</li>
+                                <li>반응형 디자인 구현</li>
+                            </ul>
+                        </li>
+                        <li><strong class="bold">기여도</strong>90% (디자인, 퍼블리싱 및 테스트)</li>
+                        <li class="flex"><a href="#" class="block b-medium rounded border1">깃허브 소스보기</a><a href="blog_platform_live_link" class="block  b-medium blue rounded">작품보기</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="pfAni4">
+                <div>
+                    <h3 class="h3">공제회홈페이지</h3>
+                    <figure>
+                        <img src="img/pf1.png" alt="공제회홈페이지">
+                        <figcaption>작업내용보기</figcaption>
+                    </figure>
+                    <ul class="sub">
+                        <li><strong class="bold">개요</strong>온라인 쇼핑몰 사이트 디자인 및 퍼블리싱</li>
+                        <li><strong class="bold">역할</strong>전체 디자인 및 프론트엔드 퍼블리싱</li>
+                        <li><strong class="bold">사용한 기술</strong>HTML5, CSS3, JavaScript, jQuery, Bootstrap</li>
+                        <li class="work">
+                            <strong class="bold">작업 과정</strong>
+                            <ul>
+                                <li>아이디어 구상 및 컨셉 설정</li>
+                                <li>와이어프레임 및 디자인 시안 제작</li>
+                                <li>HTML/CSS로 레이아웃 구현</li>
+                                <li>JavaScript/jQuery로 동적 요소 추가</li>
+                                <li>반응형 디자인 구현</li>
+                            </ul>
+                        </li>
+                        <li><strong class="bold">기여도</strong>80% (디자인, 퍼블리싱 및 테스트)</li>
+                        <li class="flex"><a href="#" class="block b-medium rounded border1">깃허브 소스보기</a><a href="ecommerce_live_link" class="block b-medium blue rounded">작품보기</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="pfAni5">
                 <div>
                     <h3 class="h3">프로젝트 2 Portfolio Website</h3>
                     <figure>
@@ -212,7 +335,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="">
+            <li class="pfAni6">
                 <div>
                     <h3 class="h3">프로젝트 3 Blog Platform</h3>
                     <figure>
