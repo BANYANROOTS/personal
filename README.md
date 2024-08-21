@@ -1,4 +1,4 @@
-### https://github.com/BANYANROOTS/personal](https://banyanroots.github.io/personal/
+### https://banyanroots.github.io/personal/
 
 # 프로젝트 명 : 최용근의 개인포트폴리오 홈페이지bash
 <h1>개인포트폴리오</h1>## 프로젝트 목표
